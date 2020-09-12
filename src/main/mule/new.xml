@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="newFlow" doc:id="9f82d940-c931-4f14-a666-465f2d876265" >
+		<scheduler doc:name="Scheduler" doc:id="250e714d-9124-4998-a038-1768f027072d" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="cf6637eb-2a10-4c69-81e1-421bea266696" message="NEW"/>
+	</flow>
+</mule>
